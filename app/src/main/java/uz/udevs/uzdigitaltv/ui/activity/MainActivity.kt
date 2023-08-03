@@ -12,6 +12,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import cafe.adriel.voyager.navigator.Navigator
 import uz.udevs.uzdigitaltv.R
+import uz.udevs.uzdigitaltv.auth.presentation.AuthStoryScreen
 import uz.udevs.uzdigitaltv.ui.theme.UzDigitalTVTheme
 import uz.udevs.uzdigitaltv.utils.AppScreen
 
@@ -51,7 +52,7 @@ class SplashScreen : AppScreen(){
 
     @Composable
     override fun Content() {
-        TODO("Not yet implemented")
+        AuthStoryScreen()
     }
 }
 
