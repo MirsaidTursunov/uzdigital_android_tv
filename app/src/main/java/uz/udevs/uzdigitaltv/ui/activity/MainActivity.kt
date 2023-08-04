@@ -13,14 +13,14 @@ import androidx.compose.ui.tooling.preview.Preview
 import cafe.adriel.voyager.navigator.Navigator
 import uz.udevs.uzdigitaltv.R
 import uz.udevs.uzdigitaltv.auth.presentation.AuthStoryScreen
-import uz.udevs.uzdigitaltv.ui.theme.UzDigitalTVTheme
+import uz.udevs.uzdigitaltv.ui.theme.AppTheme
 import uz.udevs.uzdigitaltv.utils.AppScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            UzDigitalTVTheme {
+            AppTheme {
                 Navigator(screen = SplashScreen())
             }
         }
@@ -45,7 +45,7 @@ class SplashScreen : AppScreen(){
     @Preview(showBackground = true)
     @Composable
     fun GreetingPreview() {
-        UzDigitalTVTheme {
+        AppTheme {
             Greeting()
         }
     }
